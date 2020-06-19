@@ -1,6 +1,4 @@
-# DataCity: Centralized City Data - a One Stop Shop.
-
-DataCity: A City for all your Data Needs
+DataCity: A City for all your Data Needs! 
 ========================================
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
@@ -20,6 +18,11 @@ Announcements
 =============
 
 - June 19th 2020 Intiailizing of the Repository.
+
+Open Source Data Standards
+==========================
+
+**Crime**: DataCity provides a common data model for encapsulating information
 
 Genesis
 =======
