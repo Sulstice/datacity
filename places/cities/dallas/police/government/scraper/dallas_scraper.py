@@ -67,7 +67,6 @@ class DallasScraper(object):
 
         results_df = pd.DataFrame.from_records(results)
         results_df.to_csv('dallas_police_government.csv')
-        print (results_df)
 
 
 
