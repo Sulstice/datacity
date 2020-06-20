@@ -66,6 +66,7 @@ class DallasScraper(object):
                                                 str(ENDING_DATE) + "T23:59:59.000'", limit=10000)
 
         results_df = pd.DataFrame.from_records(results)
+        results_df.to_csv('dallas_police_government.csv')
         print (results_df)
 
 
