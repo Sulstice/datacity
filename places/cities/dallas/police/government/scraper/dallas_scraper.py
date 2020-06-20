@@ -15,9 +15,8 @@ from datetime import date
 
 # Constants
 # ---------
-TODAY = date.today()
-YESTERDAY = TODAY - datetime.timedelta(days=1)
-
+BEGINNING_DATE = "2020-06-09"
+ENDING_DATE = "2020-06-15"
 
 class DallasScraper(object):
 
@@ -63,15 +62,12 @@ class DallasScraper(object):
 
         client = Socrata("www.dallasopendata.com", 'o0H6i1rlXZOTSU5djUJCFKT8x')
 
-        # results = client.get("qv6i-rri7", where="date1 BETWEEN '" + str(YESTERDAY) + "T00:00:00.000' AND '" +
-        #                                         str(YESTERDAY) + "T23:59:59.000'", limit=500)
+        results = client.get("qv6i-rri7", where="date1 BETWEEN '" + str(BEGINNING_DATE) + "T00:00:00.000' AND '" +
+                                                str(ENDING_DATE) + "T23:59:59.000'", limit=10000)
 
-        # results = client.get("qv6i-rri7", where="date1 = '" + "2020-06-20" + "T00:00:00.000'", limit=500)
-        results = client.get("qv6i-rri7", where="date1 > '" + "2020-06-20" + "'", limit=500)
         results_df = pd.DataFrame.from_records(results)
         print (results_df)
 
-        # return dallas_tables
 
 
 
