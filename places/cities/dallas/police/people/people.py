@@ -146,5 +146,5 @@ if __name__ == '__main__':
     #
     # print (DRUG_STATISTICS)
 
-    with open("../../../../government_community_crime_map_incident_payload.json", "w") as outfile:
+    with open("../../../../../data/government_community_crime_map_incident_payload.json", "w") as outfile:
         json.dump(payload, outfile,  indent=4, sort_keys=True)
