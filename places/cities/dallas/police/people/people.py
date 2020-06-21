@@ -145,8 +145,8 @@ if __name__ == '__main__':
                               left_on=['incident_address', 'lat', 'lon', 'date'],
                               right_on=['address', 'lat', 'lon', 'date'],
                               ignore_case=True,
-                              # method='levenshtein',
-                              method='bilenko',
+                              method='levenshtein',
+                              # method='bilenko',
                               threshold=0.40)
 
     missing = list(set(spotcrime_master['cdid'].to_list()) - set(matches['cdid'].to_list()))
