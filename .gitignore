@@ -1,1 +1,3 @@
+/.direnv/
 /datacity/build/
+/ci/credentials.yml
