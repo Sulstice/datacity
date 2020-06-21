@@ -14,6 +14,9 @@ continous stream of data under one umbrella.
 
 DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
 
+Website: https://sulstice.github.io/datacity/
+Engine: (Ask for access)
+
 System Architecture
 ===================
 
