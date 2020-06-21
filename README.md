@@ -14,6 +14,9 @@ continous stream of data under one umbrella.
 
 DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
 
+- Website: https://sulstice.github.io/datacity/
+- Engine: (Ask for access)
+
 System Architecture
 ===================
 
@@ -106,8 +109,8 @@ if it existed in the data set, incident number.
 
 Our fuzzy matching parameters are as follows:
 
-**threshold**: 0.40 - it was so low to allow for flexbility in mismatched records potentially. At a threshold of 0.01 we get a 100% match to government records
-**methods**: levenshtein - best known for string sub matching using distance. 
+- **threshold**: 0.40 - it was so low to allow for flexbility in mismatched records potentially. At a threshold of 0.01 we get a 100% match to government records
+- **methods**: levenshtein - best known for string sub matching using distance. 
 
 
 Our validation platform's first feature has been in analyzing police incident data to find missing records between three
