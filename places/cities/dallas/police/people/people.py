@@ -1,6 +1,8 @@
 
 import pandas as pd
 import json
+import fuzzy_pandas as fpd
+
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
@@ -50,9 +52,11 @@ ENDING_DATE = "2020-06-15"
 if __name__ == '__main__':
 
 
+    # ----------------------------------------SECTION 1 ------------------------------------------------
+
     import os
 
-    # Load People
+    # ------------ LOAD COMMUNITY MAP -----------
     dataframes = []
     for filename in os.listdir('./'):
         if filename.endswith(".htm"):
@@ -60,15 +64,47 @@ if __name__ == '__main__':
             continue
         else:
             continue
-
     people_master = pd.concat(dataframes, ignore_index=True)
     people_master[1] = people_master[1].map(lambda x: "-".join(x.split('-')[0:2]))
-    community_map_incident_numbers = people_master[1].tolist()
 
+    # ------------ SPOT CRIME MAP -----------
+    spotcrime_master = pd.read_json('./spot_crime.json')
+    spotcrime_master["lon"] = spotcrime_master["lon"].astype(str)
+    spotcrime_master["lat"] = spotcrime_master["lat"].astype(str)
+    mask = (spotcrime_master['date'] > BEGINNING_DATE) & (spotcrime_master['date'] <= ENDING_DATE)
+    spotcrime_master = spotcrime_master.loc[mask]
+
+    # ------------ GOVERNMENT ---------------
+    government_master = pd.read_csv('./dallas_police_government2.csv')
+    government_master["lat"] = government_master["geocoded_column"].map(lambda x: json.loads(x.replace("'", '!!!').replace('"', "'").replace('!!!', '"')))
+    government_master["lon"] = government_master["geocoded_column"].map(lambda x: json.loads(x.replace("'", '!!!').replace('"', "'").replace('!!!', '"')))
+
+    lat_list = government_master["lat"].to_list()
+    lon_list = government_master["lon"].to_list()
+
+    lat_list_new = []
+    lon_list_new = []
+
+    for i in lat_list:
+        if 'latitude' in i:
+            lat_list_new.append(str(i["latitude"]))
+            lon_list_new.append(str(i["longitude"]))
+        else:
+            lat_list_new.append('na')
+            lon_list_new.append('na')
+
+    government_master["lat"] = lat_list_new
+    government_master["lon"] = lon_list_new
+
+    # government_master["lon"] = government_master["geocoded_column"].map(lambda x: x)
+
+
+    # -------------------------------------------------------------------------------------------------
+
+    community_map_incident_numbers = people_master[1].tolist()
     payload = {}
 
     # Government
-    government_master = pd.read_csv('./dallas_police_government2.csv')
     government_incident_numbers = government_master["incidentnum"].tolist()
 
     community_crime_map_missing_incidents = list(set(government_incident_numbers) - set(community_map_incident_numbers))
@@ -86,6 +122,21 @@ if __name__ == '__main__':
     payload["community_crime_map_missing_incident_numbers"] = community_crime_map_missing_incidents
     payload["government_missing_incident_numbers"] = government_missing_incidents
 
-    with open("government_community_crime_map_incident_payload.json", "w") as outfile:
-        json.dump(payload, outfile,  indent=4, sort_keys=True)
+    government_master["date1"] = government_master["date1"].astype(str)
+    spotcrime_master["date"] = spotcrime_master["date"].astype(str)
 
+
+    # Fuzzy Matching
+
+    matches = fpd.fuzzy_merge(government_master, spotcrime_master,
+                              left_on=['incident_address', 'lat', 'lon', 'date1'],
+                              right_on=['address', 'lat', 'lon', 'date'],
+                              ignore_case=True,
+                              method='levenshtein',
+                              # method='bilenko',
+                              threshold=0.60)
+
+    missing = list(set(spotcrime_master['cdid'].to_list()) - set(matches['cdid'].to_list()))
+
+    with open("../../../../../government_community_crime_map_incident_payload.json", "w") as outfile:
+        json.dump(payload, outfile,  indent=4, sort_keys=True)

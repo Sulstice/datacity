@@ -1,11 +1,35 @@
-DataCity: A City for all your Data Needs! 
+DataCity: A Validation Platform for Data
 ========================================
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 [![DOI](https://zenodo.org/badge/256060429.svg)](https://zenodo.org/badge/latestdoi/256060429)
 
 
-Welcome to DataCity! DataCity is a place for open source standard city data that will follow rigorous guidelines about how data is collected and stored within it's walls. 
+Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between the
+people and the government. Our motivation serves as a possible way to validate data "as it comes in" rather than after the
+dataset is collected then published leading to messy data and mismatched records. 
+
+DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
+ 
+ 
+DISCLAIMER: ANY OF THE 
+ 
+ With the rise of open source reporting platforms like  `Open Data Network`, `Spot Crime`, `Community Map` it's
+become easier for regular citizens to file police reports without having to go through the arduous police system. Folk
+can also report crime in real time. 
+
+
+System Architecture
+===================
+
+DataCity will need to have three components in order to make it a viable platform for continous analytics. 
+
+- **1st Component**: A method of fetching the data and a large scalable platform to do so. DataCity will have an in-house 
+                     concourse CI system that will have URLs to scrape from and collect/parse data. This system will be built
+                     on digital ocean where the master node is the concourse web service that will serve as our interface
+                     for running jobs for daily collection. The concourse CI will fetch data from three platforms: Community Map,
+                     SpotCrime, and Dallas OpenData. Each request will be run on a 24 hour cycle when the Dallas Police Crime
+                     Department updates their website with the appropiate Daily Crime Report.  
 
 DataCity will have three components that will make it a viable platform for all users that want to enter as a citizen.
 
