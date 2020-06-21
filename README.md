@@ -22,7 +22,8 @@ can also report crime in real time.
 System Architecture
 ===================
 
-DataCity will need to have three components in order to make it a viable platform for continous analytics. 
+DataCity will need to have three components in order to make it a viable platform for continous analytics and for our 
+`Proof of Concept` we will be focusing more towards Police Incident Data. 
 
 - **1st Component**: A method of fetching the data and a large scalable platform to do so. DataCity will have an in-house 
                      concourse CI system that will have URLs to scrape from and collect/parse data. This system will be built
@@ -36,6 +37,10 @@ DataCity will have three components that will make it a viable platform for all 
 - A Concourse System that will run a continuous real time acquisition of other city data and bring them into data city.
 - A potential python mid layer that will serve as an API.
 - A web application that you can browse and check out data as you wish. 
+
+
+Validation Methods & Results
+============================
 
 
 Announcements
