@@ -15,7 +15,7 @@
  [![saythanks](https://img.shields.io/badge/Thanks-CapsuleHack2020-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
 
 <p align="center">
-  <img width="700" height="400" src="images/logo.png">
+  <img width="600" height="400" src="images/logo.png">
 </p>
 
 Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between different
