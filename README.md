@@ -47,6 +47,9 @@ System at it's current state:
 
 **NOTE**: Workers are scalable for pulling more datasets
 
+Workers are running on digital ocean on a kubernetes cluster. Each node has 2 CPUs for processing data and running jobs 
+for our data.
+
 Engine
 ======
 
@@ -61,6 +64,14 @@ we scale.
 <p align="center">
   <img width="700" height="400" src="images/website_image.png">
 </p>
+
+
+Here is an example of one of the workers running through the build process
+
+<p align="center">
+  <img width="700" height="400" src="images/website_image2.png">
+</p>
+
 
 Validation
 ==========
