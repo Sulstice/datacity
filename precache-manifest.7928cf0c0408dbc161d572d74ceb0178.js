@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09a2b14cb10de8a02e03682f4e24ee1a",
+    "revision": "2a969e62e54154ad79cc82c909e192c1",
     "url": "/datacity/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/datacity/static/css/2.3ea6c7db.chunk.css"
   },
   {
-    "revision": "bff423a3cc23069552c9",
-    "url": "/datacity/static/css/main.83e565eb.chunk.css"
+    "revision": "b494ee6073ba91939a8d",
+    "url": "/datacity/static/css/main.da0fc974.chunk.css"
   },
   {
     "revision": "3158bb2a667097d8b46d",
@@ -20,11 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/datacity/static/js/2.87f00a19.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bff423a3cc23069552c9",
-    "url": "/datacity/static/js/main.0a70fb3c.chunk.js"
+    "revision": "b494ee6073ba91939a8d",
+    "url": "/datacity/static/js/main.ea04374b.chunk.js"
   },
   {
     "revision": "271b4d48e2c717681435",
     "url": "/datacity/static/js/runtime-main.f0223133.js"
+  },
+  {
+    "revision": "6115a40a52cb0caa7d1bf3bad5813e66",
+    "url": "/datacity/static/media/citycity.6115a40a.png"
   }
 ]);
