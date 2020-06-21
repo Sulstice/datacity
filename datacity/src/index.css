@@ -2918,10 +2918,11 @@ button:disabled,
   padding: 8em 0 9em 0;
   background-image: url(./city2.png);
   background-size: cover;
-  background-position: bottom;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
+  background-position: right center;
+
 }
 
 #banner:before {
