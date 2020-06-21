@@ -1,19 +1,11 @@
-
 class ApiService{
+    getData = (url) => {
 
-    constructor() {
-
-    }
-
-    get = () => {
-
-    }
-
-    post = () => {
-
+        var request = new XMLHttpRequest()
+        request.overrideMimeType("application/json")
+        request.open('GET', url, false)
+        request.send(null)
+        return JSON.parse(request.responseText)
     }
 }
-
-
-const apiService = new ApiService();
-export default apiService;
+export default ApiService;
