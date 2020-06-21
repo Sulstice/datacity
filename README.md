@@ -51,10 +51,16 @@ Engine
 ======
 
 As datasets are being reported by various agencies and the people we record the data and aggregate values on a real-time basis.
-Currently, our aggregation is set on a 24-hour cycle due to our POC. Depicted below is our ConcourseCI Engine that manages
-the continous analytics.
+Currently, our aggregation is set on a 24-hour cycle due to our POC. Depicted below is our Concourse CI Engine that manages
+the continuous analytics.
 
+Our front-end website is built with ReactJS and a simple Ag-Grid table to display the data. The python mid layer updates
+a JSON file and the app rebuilds using our engine. That's how we avoided a db setup but a potential avenue to build when 
+we scale.
 
+<p align="center">
+  <img width="700" height="400" src="images/website_image.png">
+</p>
 
 Validation
 ==========
