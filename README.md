@@ -73,7 +73,7 @@ Currently, our aggregation is set on a 24-hour cycle due to our POC. Depicted be
 the continuous analytics.
 
 <p align="center">
-  <img width="700" height="400" src="images/validation.png">
+  <img width="700" height="400" src="images/image.png">
 </p>
 
 Here is an example of one of the workers running through the build process
