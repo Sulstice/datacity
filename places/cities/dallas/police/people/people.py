@@ -96,17 +96,17 @@ if __name__ == '__main__':
     government_missing_incidents = list(set(community_map_incident_numbers) - set(government_incident_numbers))
 
     # Prepare payload
-    payload["query_beginning_date"] = BEGINNING_DATE
-    payload["query_ending_date"] = ENDING_DATE
-    payload["city"] = "dallas"
-    payload["state"] = "TX"
-    payload["country"] = "United States of America"
-    payload["community_crime_map_incidents_reported"] = len(community_map_incident_numbers)
-    payload["government_incidents_reported"] = len(government_incident_numbers)
-    payload["incident_count_difference"] = government_master.shape[0] - people_master.shape[0]
-    payload["community_crime_map_missing_incident_numbers"] = community_crime_map_missing_incidents
-    payload["government_missing_incident_numbers"] = government_missing_incidents
-    payload["spot_crime_incident_numbers"] = len(spotcrime_incidents)
+    payload["Beginning Date"] = BEGINNING_DATE
+    payload["Ending Date"] = ENDING_DATE
+    payload["City"] = "dallas"
+    payload["State"] = "TX"
+    payload["Country"] = "United States of America"
+    payload["Citizens 1 Incidents Reported"] = len(community_map_incident_numbers)
+    payload["Government Incidents Reported"] = len(government_incident_numbers)
+    payload["Difference bwt Citizens 1 & Gov"] = government_master.shape[0] - people_master.shape[0]
+    payload["Citizens 1 Incidents Missing Reports"] = community_crime_map_missing_incidents
+    payload["Government Missing Incident Numbers"] = government_missing_incidents
+    payload["Gitizens 2Incidents Reported"] = len(spotcrime_incidents)
 
     government_master["date1"] = government_master["date1"].astype(str)
     spotcrime_master["date"] = spotcrime_master["date"].astype(str)
@@ -123,7 +123,28 @@ if __name__ == '__main__':
                               threshold=0.40)
 
     missing = list(set(spotcrime_master['cdid'].to_list()) - set(matches['cdid'].to_list()))
-    payload["spot_crime_missing_incident_numbers"] = len(missing)
+    payload["Citizens 2 Incidents Missing Reports"] = len(missing)
 
-    with open("government_community_crime_map_incident_payload.json", "w") as outfile:
+    # HOMELESS_STATISTICS = {}
+    # DRUG_STATISTICS = {}
+    #
+    # victim_addresses = government_master['comphaddress'].to_list()
+    # drugs = government_master['objattack'].to_list()
+    # dates_of_occurence = government_master['date1'].to_list()
+    #
+    # for i in range(0, len(victim_addresses)):
+    #     if 'HOMELESS' in str(victim_addresses[i]):
+    #         if dates_of_occurence[i] in HOMELESS_STATISTICS:
+    #             HOMELESS_STATISTICS[dates_of_occurence[i]] += 1
+    #         else:
+    #             HOMELESS_STATISTICS[dates_of_occurence[i]] = 1
+    #     if 'COCAINE' in str(victim_addresses[i]):
+    #         if dates_of_occurence[i] in DRUG_STATISTICS:
+    #             DRUG_STATISTICS[dates_of_occurence[i]] += 1
+    #         else:
+    #             DRUG_STATISTICS[dates_of_occurence[i]] = 1
+    #
+    # print (DRUG_STATISTICS)
+
+    with open("../../../../government_community_crime_map_incident_payload.json", "w") as outfile:
         json.dump(payload, outfile,  indent=4, sort_keys=True)
