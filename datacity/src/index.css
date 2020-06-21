@@ -2916,10 +2916,9 @@ button:disabled,
 
 #banner {
   padding: 8em 0 9em 0;
-    background-image: url(./citycity.png);
+  background-image: url(./city2.png);
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
