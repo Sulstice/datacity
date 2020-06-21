@@ -4,7 +4,6 @@
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 ![Repo Size](https://img.shields.io/github/repo-size/Sulstice/datacity)
-[![DOI](https://zenodo.org/badge/256060429.svg)](https://zenodo.org/badge/latestdoi/256060429)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
@@ -27,7 +26,9 @@ DataCity can serve as a validation and aggregation platform for all different ty
 open source validation platform. People can submit suggestions to standards, validation code, and submit their own 
 continous stream of data under one umbrella. 
 
-DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
+DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. We are part of the 
+"Cities" challenge. Clean efficient data that is unified and clear is what will drive cities to become "smart". We think this is the first step
+into smart city innovation.
 
 - Website: https://sulstice.github.io/datacity/
 - Engine: (Ask for access)
