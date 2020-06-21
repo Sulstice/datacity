@@ -29,7 +29,7 @@ function App() {
                 <h2>Data Output</h2>
                 <hr style={{ 'width':'75%'}}/>
                 <div style={{'flex-grow':'1', 'width':'90%'}}>
-                    <DCGrid data={res} ignoreFields={['community_crime_map_missing_incident_numbers']} />
+                    <DCGrid data={res} ignoreFields={['Government Missing Incident Numbers']} />
                 </div>
         </div>
     </div>
