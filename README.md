@@ -9,9 +9,6 @@ people and the government. Our motivation serves as a possible way to validate d
 dataset is collected then published leading to messy data and mismatched records. 
 
 DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
- 
-DISCLAIMER: THE FOLLOWING CODE IS ONLY TO BE USED FOR ACADEMIC PURPOSES. PLEASE CHECK WITH THAT YOU HAVE ORIGINAL OWNERS PERMISSION TO USE THEIR DATA SET BEFORE USING OUR PROGRAM; USING DATASETS WITHOUT EXPRESSED CONSENT MIGHT BE VIOLATING 3RD PARTIES TERMS OF SERVICE. USE AT YOUR OWN LEGAL RISK.
-
 
 System Architecture
 ===================
@@ -99,4 +96,4 @@ External links
 - Austin Police Department Crime Statistics (https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu/data)
 - Dallas Police Department Crime Statistics (https://dallaspolice.net/resources/Pages/Crime-reports.aspx) 
 
-
+**DISCLAIMER:** THE FOLLOWING CODE IS ONLY TO BE USED FOR ACADEMIC PURPOSES. PLEASE CHECK WITH THAT YOU HAVE ORIGINAL OWNERS PERMISSION TO USE THEIR DATA SET BEFORE USING OUR PROGRAM; USING DATASETS WITHOUT EXPRESSED CONSENT MIGHT BE VIOLATING 3RD PARTIES TERMS OF SERVICE. USE AT YOUR OWN LEGAL RISK.
