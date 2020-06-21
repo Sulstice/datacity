@@ -105,8 +105,8 @@ if __name__ == '__main__':
     payload["Government Incidents Reported"] = len(government_incident_numbers)
     payload["Difference bwt Citizens 1 & Gov"] = government_master.shape[0] - people_master.shape[0]
     payload["Citizens 1 Incidents Missing Reports"] = community_crime_map_missing_incidents
-    payload["Government Missing Incident Numbers"] = government_missing_incidents
-    payload["Gitizens 2Incidents Reported"] = len(spotcrime_incidents)
+    payload["Government Missing Incident Numbers"] = len(government_missing_incidents)
+    payload["Citizens 2 Incidents Reported"] = len(spotcrime_incidents)
 
     government_master["date1"] = government_master["date1"].astype(str)
     spotcrime_master["date"] = spotcrime_master["date"].astype(str)
@@ -146,5 +146,5 @@ if __name__ == '__main__':
     #
     # print (DRUG_STATISTICS)
 
-    with open("../../../../government_community_crime_map_incident_payload.json", "w") as outfile:
+    with open("../../../../../data/government_community_crime_map_incident_payload.json", "w") as outfile:
         json.dump(payload, outfile,  indent=4, sort_keys=True)
