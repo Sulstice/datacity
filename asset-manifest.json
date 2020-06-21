@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/datacity/static/css/main.a3848ec9.chunk.css",
+    "main.css": "/datacity/static/css/main.a48cd7fa.chunk.css",
     "main.js": "/datacity/static/js/main.83e91c89.chunk.js",
     "main.js.map": "/datacity/static/js/main.83e91c89.chunk.js.map",
     "runtime-main.js": "/datacity/static/js/runtime-main.f0223133.js",
@@ -9,10 +9,10 @@
     "static/js/2.87f00a19.chunk.js": "/datacity/static/js/2.87f00a19.chunk.js",
     "static/js/2.87f00a19.chunk.js.map": "/datacity/static/js/2.87f00a19.chunk.js.map",
     "index.html": "/datacity/index.html",
-    "precache-manifest.6035d2f691c81e6fde6c56010bc62973.js": "/datacity/precache-manifest.6035d2f691c81e6fde6c56010bc62973.js",
+    "precache-manifest.4034afe73af08a7549b2be20e89bc262.js": "/datacity/precache-manifest.4034afe73af08a7549b2be20e89bc262.js",
     "service-worker.js": "/datacity/service-worker.js",
     "static/css/2.3ea6c7db.chunk.css.map": "/datacity/static/css/2.3ea6c7db.chunk.css.map",
-    "static/css/main.a3848ec9.chunk.css.map": "/datacity/static/css/main.a3848ec9.chunk.css.map",
+    "static/css/main.a48cd7fa.chunk.css.map": "/datacity/static/css/main.a48cd7fa.chunk.css.map",
     "static/js/2.87f00a19.chunk.js.LICENSE.txt": "/datacity/static/js/2.87f00a19.chunk.js.LICENSE.txt",
     "static/media/index.css": "/datacity/static/media/city2.90a9046d.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.f0223133.js",
     "static/css/2.3ea6c7db.chunk.css",
     "static/js/2.87f00a19.chunk.js",
-    "static/css/main.a3848ec9.chunk.css",
+    "static/css/main.a48cd7fa.chunk.css",
     "static/js/main.83e91c89.chunk.js"
   ]
 }
