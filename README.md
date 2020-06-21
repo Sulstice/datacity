@@ -1,8 +1,18 @@
-DataCity: A Validation Platform for Data
+
+ DataCity: A Validation Platform for Data
 ========================================
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+![Repo Size](https://img.shields.io/github/repo-size/Sulstice/datacity)
 [![DOI](https://zenodo.org/badge/256060429.svg)](https://zenodo.org/badge/latestdoi/256060429)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
+![Python](https://img.shields.io/badge/python-3.6-blue.svg)
+    <a href="https://github.com/badges/shields/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/badges/shields" /></a>
+ [![saythanks](https://img.shields.io/badge/Thanks-CapsuleHack2020-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
 
 <p align="center">
   <img width="700" height="400" src="images/logo.png">
@@ -10,7 +20,8 @@ DataCity: A Validation Platform for Data
 
 Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between different
 platforms. Our motivation serves as a possible way to validate data "as it comes in" rather than after the
-dataset is collected then published leading to messy data and mismatched records. 
+dataset is collected then published leading to messy data and mismatched records. Utilizing fuzzy matching or specific correlation
+keys we can perform high confidence aggregation.
 
 DataCity can serve as a validation and aggregation platform for all different types of data by centralizing it under an 
 open source validation platform. People can submit suggestions to standards, validation code, and submit their own 
