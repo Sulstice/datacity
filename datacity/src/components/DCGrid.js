@@ -58,8 +58,8 @@ class DCGrid extends React.Component {
                 className="ag-theme-alpine"
                 style={{
                     height: '250px',
-                    width: 'auto',
-                    maxWidth: '2000px'}}
+                    width: '100%',
+                    maxWidth: '100%'}}
             >
                 <AgGridReact
                     columnDefs={this.state.columnDefs}
