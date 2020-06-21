@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Sulstice/datacity/datacity/static/css/main.83e565eb.chunk.css",
-    "main.js": "/Sulstice/datacity/datacity/static/js/main.db354597.chunk.js",
-    "main.js.map": "/Sulstice/datacity/datacity/static/js/main.db354597.chunk.js.map",
-    "runtime-main.js": "/Sulstice/datacity/datacity/static/js/runtime-main.f026c458.js",
-    "runtime-main.js.map": "/Sulstice/datacity/datacity/static/js/runtime-main.f026c458.js.map",
-    "static/css/2.daf4b330.chunk.css": "/Sulstice/datacity/datacity/static/css/2.daf4b330.chunk.css",
-    "static/js/2.447cf5f5.chunk.js": "/Sulstice/datacity/datacity/static/js/2.447cf5f5.chunk.js",
-    "static/js/2.447cf5f5.chunk.js.map": "/Sulstice/datacity/datacity/static/js/2.447cf5f5.chunk.js.map",
-    "index.html": "/Sulstice/datacity/datacity/index.html",
-    "precache-manifest.2eae80e9ec3feb8b364ad711c0e4056e.js": "/Sulstice/datacity/datacity/precache-manifest.2eae80e9ec3feb8b364ad711c0e4056e.js",
-    "service-worker.js": "/Sulstice/datacity/datacity/service-worker.js",
-    "static/css/2.daf4b330.chunk.css.map": "/Sulstice/datacity/datacity/static/css/2.daf4b330.chunk.css.map",
-    "static/css/main.83e565eb.chunk.css.map": "/Sulstice/datacity/datacity/static/css/main.83e565eb.chunk.css.map",
-    "static/js/2.447cf5f5.chunk.js.LICENSE.txt": "/Sulstice/datacity/datacity/static/js/2.447cf5f5.chunk.js.LICENSE.txt"
+    "main.css": "/Sulstice/datacity/static/css/main.83e565eb.chunk.css",
+    "main.js": "/Sulstice/datacity/static/js/main.05092bcd.chunk.js",
+    "main.js.map": "/Sulstice/datacity/static/js/main.05092bcd.chunk.js.map",
+    "runtime-main.js": "/Sulstice/datacity/static/js/runtime-main.8b8b3cb2.js",
+    "runtime-main.js.map": "/Sulstice/datacity/static/js/runtime-main.8b8b3cb2.js.map",
+    "static/css/2.daf4b330.chunk.css": "/Sulstice/datacity/static/css/2.daf4b330.chunk.css",
+    "static/js/2.447cf5f5.chunk.js": "/Sulstice/datacity/static/js/2.447cf5f5.chunk.js",
+    "static/js/2.447cf5f5.chunk.js.map": "/Sulstice/datacity/static/js/2.447cf5f5.chunk.js.map",
+    "index.html": "/Sulstice/datacity/index.html",
+    "precache-manifest.835fb6c78cb008f9cd057a47b99a702d.js": "/Sulstice/datacity/precache-manifest.835fb6c78cb008f9cd057a47b99a702d.js",
+    "service-worker.js": "/Sulstice/datacity/service-worker.js",
+    "static/css/2.daf4b330.chunk.css.map": "/Sulstice/datacity/static/css/2.daf4b330.chunk.css.map",
+    "static/css/main.83e565eb.chunk.css.map": "/Sulstice/datacity/static/css/main.83e565eb.chunk.css.map",
+    "static/js/2.447cf5f5.chunk.js.LICENSE.txt": "/Sulstice/datacity/static/js/2.447cf5f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f026c458.js",
+    "static/js/runtime-main.8b8b3cb2.js",
     "static/css/2.daf4b330.chunk.css",
     "static/js/2.447cf5f5.chunk.js",
     "static/css/main.83e565eb.chunk.css",
-    "static/js/main.db354597.chunk.js"
+    "static/js/main.05092bcd.chunk.js"
   ]
 }
