@@ -1,4 +1,4 @@
-from .dallas_scraper import DallasScraper
+from dallas_scraper import DallasScraper
 
 if __name__ == '__main__':
 

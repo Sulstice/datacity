@@ -15,7 +15,7 @@ from datetime import date
 
 # Constants
 # ---------
-BEGINNING_DATE = "2020-06-09"
+BEGINNING_DATE = "2020-06-08"
 ENDING_DATE = "2020-06-15"
 
 class DallasScraper(object):
