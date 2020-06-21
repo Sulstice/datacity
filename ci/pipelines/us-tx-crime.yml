@@ -1,0 +1,58 @@
+---
+resources:
+  - name: git
+    type: git
+    icon: git
+    source:
+      uri: https://github.com/Sulstice/datacity.git
+      path: places/cities/dallas/police/government/scraper
+  - name: data
+    type: s3
+    icon: folder-zip
+    source:
+      bucket: datacity-data
+      versioned_file: data/data.zip
+      unpack: true
+      access_key_id: ((s3_access_key_id))
+      secret_access_key: ((s3_secret_access_key))
+      private: true
+jobs:
+  - name: dallas
+    plan:
+      - get: git
+        trigger: true
+      - get: data
+      - task: scrape
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source:
+              repository: python
+              tag: 3.7
+          inputs:
+            - name: git
+            - name: data
+          outputs:
+            - name: git
+          run:
+            path: sh
+            args:
+              - -exc
+              - |
+                cd data
+                unzip data.zip
+                cd ..
+                cp data/* git/places/cities/dallas/police/people/
+                cd git
+                pip install -r requirements.txt
+                cd places/cities/dallas/police/people/
+                python people.py
+                cd ../../../../..
+                git config user.name "lezied"
+                git config user.email "deizel+lezied@gmail.com"
+                git add data
+                git commit -m 'Generate data'
+      - put: git
+        params:
+          repository: git
