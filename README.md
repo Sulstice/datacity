@@ -11,6 +11,8 @@ DataCity: A Validation Platform for Data
 ![Python](https://img.shields.io/badge/python-3.6-blue.svg)
     <a href="https://github.com/badges/shields/pulse" alt="Activity">
         <img src="https://img.shields.io/github/commit-activity/m/badges/shields" /></a>
+ [![saythanks](https://img.shields.io/badge/Thanks-CapsuleHack2020-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
+
 
 Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between different
 platforms. Our motivation serves as a possible way to validate data "as it comes in" rather than after the
