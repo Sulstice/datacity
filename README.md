@@ -35,7 +35,7 @@ DataCity will need to have three components in order to make it a viable platfor
 System at it's current state:
 
 <p align="center">
-  <img width="500" height="300" src="images/network_diagram.png">
+  <img width="500" height="300" src="images/network_diagram1.png">
 </p>
 
 **NOTE**: Workers are scalable for pulling more datasets
