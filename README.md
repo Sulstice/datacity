@@ -10,8 +10,8 @@ dataset is collected then published leading to messy data and mismatched records
 
 DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
  
-DISCLAIMER: THE FOLLOWING CODE IS ONLY TO BE USED FOR ACADEMIC PURPOSES. SCRAPING WEBSITES SUCH AS COMMUNITY CRIME MAP AND 
-SPOTCRIME MAY BE IN VIOLATE OF USER POLICY. USE AT YOUR OWN LEGAL RISK.
+DISCLAIMER: THE FOLLOWING CODE IS ONLY TO BE USED FOR ACADEMIC PURPOSES. SCRAPING WEBSITES MAY BE IN VIOLATE OF USER POLICY.
+USE AT YOUR OWN LEGAL RISK.
 
 
 System Architecture
@@ -52,9 +52,8 @@ Validation Engine
 Proof of Concept: Category - Police Incident Data
 =================================================
 
-With the rise of open source reporting platforms like  `Open Data Network`, `Spot Crime`, `Community Map` it's
-become easier for regular citizens to file police reports without having to go through the arduous police system. Folk
-can also report crime in real time. 
+With the rise of open source reporting platforms it's become easier for regular citizens to file police reports 
+without having to go through the arduous police system. Folk can also report crime in real time. 
 
 This can also lead to conflicts with whatever is being recorded in the government databases.
 So potentially we could receive a mismatch of records. 
