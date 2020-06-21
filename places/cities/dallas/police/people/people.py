@@ -6,33 +6,6 @@ import fuzzy_pandas as fpd
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-# Useful debugging code
-# ---------------------------
-
-# Match a value
-# print(government_master[government_master['incidentnum'].str.match(search_param)])
-#
-# print (government_master.shape)
-# print (people_master.shape)
-#
-# government_cases_reported = government_master[government_master['incidentnum'].isin(incident_numbers)]
-# print ("Government Cases Reported: ")
-#
-# incident_numbers_found = government_cases_reported['incidentnum'].to_list()
-# print ("Incident Numbers Found: " + str(len(incident_numbers_found)))
-#
-#
-# incident_numbers_not_reported = list(set(incident_numbers) - set(incident_numbers_found))
-# print ()
-# print ("Incident Numbers Not Reported: " + str(len(incident_numbers_not_reported)))
-#
-#
-# cases_not_reported = people_master[people_master[1].isin(incident_numbers_not_reported)]
-# print ("Cases Not Reported: " )
-# print (cases_not_reported)
-
-# ---------------------------
-
 HEADERS = {
     0: "Class",
     1: "Incident",
@@ -152,5 +125,5 @@ if __name__ == '__main__':
     missing = list(set(spotcrime_master['cdid'].to_list()) - set(matches['cdid'].to_list()))
     payload["spot_crime_missing_incident_numbers"] = len(missing)
 
-    with open("../../../../../data/government_community_crime_map_incident_payload.json", "w") as outfile:
+    with open("government_community_crime_map_incident_payload.json", "w") as outfile:
         json.dump(payload, outfile,  indent=4, sort_keys=True)
