@@ -72,6 +72,16 @@ As datasets are being reported by various agencies and the people we record the 
 Currently, our aggregation is set on a 24-hour cycle due to our POC. Depicted below is our Concourse CI Engine that manages
 the continuous analytics.
 
+<p align="center">
+  <img width="700" height="400" src="images/validation.png">
+</p>
+
+Here is an example of one of the workers running through the build process
+
+<p align="center">
+  <img width="700" height="400" src="images/worker2.png">
+</p>
+
 Our front-end website is built with ReactJS and a simple Ag-Grid table to display the data. The python mid layer updates
 a JSON file and the app rebuilds using our engine. That's how we avoided a db setup but a potential avenue to build when 
 we scale.
@@ -87,6 +97,11 @@ Here is an example of one of the workers running through the build process
   <img width="700" height="400" src="images/website_image2.png">
 </p>
 
+Website generated at the end
+
+<p align="center">
+  <img width="700" height="400" src="images/website.png">
+</p>
 
 Validation
 ==========
