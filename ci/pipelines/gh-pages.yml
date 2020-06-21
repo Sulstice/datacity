@@ -1,0 +1,52 @@
+---
+resources:
+  - name: react-app
+    type: git
+    icon: git
+    source:
+      uri: git@github.com:Sulstice/datacity.git
+      private_key: ((github_private_key))
+      path: datacity
+  - name: gh-pages
+    type: git
+    icon: git
+    source:
+      uri: git@github.com:Sulstice/datacity.git
+      branch: gh-pages
+      private_key: ((github_private_key))
+jobs:
+  - name: gh-pages
+    plan:
+      - get: react-app
+        trigger: true
+      - get: gh-pages
+      - task: make-deploy
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source:
+              repository: node
+          inputs:
+            - name: react-app
+            - name: gh-pages
+          outputs:
+            - name: gh-pages
+          run:
+            path: sh
+            args:
+              - -exc
+              - |
+                cd react-app/datacity
+                yarn
+                yarn run build
+                rm -rf ../../gh-pages/*
+                mv build/* ../../gh-pages
+                cd ../../gh-pages
+                git config user.name "lezied"
+                git config user.email "deizel+lezied@gmail.com"
+                git add .
+                git commit -m 'Updates'
+      - put: gh-pages
+        params:
+          repository: gh-pages
