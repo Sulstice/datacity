@@ -26,7 +26,9 @@ DataCity can serve as a validation and aggregation platform for all different ty
 open source validation platform. People can submit suggestions to standards, validation code, and submit their own 
 continous stream of data under one umbrella. 
 
-DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. 
+DataCity was built for the CapsuleHack 2020 and below is our first implementation of DataCity and the methods involved. We are part of the 
+"Cities" challenge. Clean efficient data that is unified and clear is what will drive cities to become "smart". We think this is the first step
+into smart city innovation.
 
 - Website: https://sulstice.github.io/datacity/
 - Engine: (Ask for access)
