@@ -2,6 +2,8 @@ import React from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+import './ag.css'
+
 
 class DCGrid extends React.Component {
     constructor(props) {
@@ -18,8 +20,10 @@ class DCGrid extends React.Component {
         let headers = Object.keys(data)
         for(let counter = 0; counter < headers.length; counter++) {
             let name = headers[counter]
-            if(!(name in this.ignoreFields))
-                res[name] = data[name]
+            if((this.ignoreFields.includes(name))) {
+                continue
+            }
+            res[name] = data[name]
         }
         return [res]
     }
@@ -36,7 +40,9 @@ class DCGrid extends React.Component {
         var headers = Object.keys(data)
         for(let counter = 0; counter < headers.length; counter++) {
             let name = headers[counter]
-            if(!(name in this.ignoreFields))
+            if((this.ignoreFields.includes(name))) {
+                continue
+            }
             res.push({headerName: name, field: name})
         }
         return res
@@ -53,15 +59,20 @@ class DCGrid extends React.Component {
             return ''
         }
 
+        var width = window.screen.width-150;
+
+
+
         return (
             <div
-                className="ag-theme-alpine"
-                style={{
-                    height: '250px',
-                    width: '100%',
-                    maxWidth: '100%'}}
+                style={{ height: '250px', width: '100%' }} className="ag-theme-alpine"
+
             >
                 <AgGridReact
+                    onGridReady={ params => {
+                        this.gridApi = params.api;
+                        params.columnApi.sizeColumnsToFit(width) }
+                    }
                     columnDefs={this.state.columnDefs}
                     rowData={this.state.rowData}>
                 </AgGridReact>
