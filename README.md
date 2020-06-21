@@ -6,7 +6,8 @@ DataCity: A Validation Platform for Data
 
 Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between different
 platforms. Our motivation serves as a possible way to validate data "as it comes in" rather than after the
-dataset is collected then published leading to messy data and mismatched records. 
+dataset is collected then published leading to messy data and mismatched records. Utilizing fuzzy matching or specific correlation
+keys we can perform high confidence aggregation.
 
 DataCity can serve as a validation and aggregation platform for all different types of data by centralizing it under an 
 open source validation platform. People can submit suggestions to standards, validation code, and submit their own 
