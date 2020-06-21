@@ -5,8 +5,8 @@ import DCGrid from "./components/DCGrid"
 
 function App() {
   var api = new apiService();
-  var res = api.getData('https://raw.githubusercontent.com/Sulstice/datacity/master/data/government_community_crime_map_incident_payload.json');
-  // var styles = {'display':'flex'};
+  var cacheBreaker = Math.floor(Math.random() * Math.floor(10000000))
+  var res = api.getData('https://raw.githubusercontent.com/Sulstice/datacity/master/data/government_community_crime_map_incident_payload.json' + '?' + cacheBreaker);
   return (
     <div style={{}} className="App">
         <section id="banner">
@@ -14,9 +14,6 @@ function App() {
                 <header>
                     <h1>Welcome to DataCity</h1>
                 </header>
-
-                {/*<div className="flex ">*/}
-                {/*</div>*/}
 
                 <footer>
                     <a href="#" className="button">Get Started</a>
