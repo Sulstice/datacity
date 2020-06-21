@@ -36,8 +36,8 @@ DataCity will need to have three components in order to make it a viable platfor
                      as the interface as data is updated and notify followers of gaps in records.             
 
 
-Proof of Concept Police Incidents
-=================================
+Proof of Concept: Category - Police Incident Data
+=================================================
 
 With the rise of open source reporting platforms like  `Open Data Network`, `Spot Crime`, `Community Map` it's
 become easier for regular citizens to file police reports without having to go through the arduous police system. Folk
