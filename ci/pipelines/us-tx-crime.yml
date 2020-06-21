@@ -1,11 +1,18 @@
 ---
 resources:
+  - name: daily
+    type: time
+    icon: calendar-today
+    source:
+      interval: 24h
   - name: git
     type: git
     icon: git
     source:
-      uri: https://github.com/Sulstice/datacity.git
-      path: places/cities/dallas/police/government/scraper
+      uri: git@github.com:Sulstice/datacity.git
+      private_key: ((github_private_key))
+      path: places/cities/dallas/police/people/
+      branch: master
   - name: data
     type: s3
     icon: folder-zip
@@ -19,6 +26,8 @@ resources:
 jobs:
   - name: dallas
     plan:
+      - get: daily
+        trigger: true
       - get: git
         trigger: true
       - get: data
@@ -52,7 +61,7 @@ jobs:
                 git config user.name "lezied"
                 git config user.email "deizel+lezied@gmail.com"
                 git add data
-                git commit -m 'Generate data'
+                git commit -m 'Generate data' || true
       - put: git
         params:
           repository: git

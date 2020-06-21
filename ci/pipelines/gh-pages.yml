@@ -46,7 +46,7 @@ jobs:
                 git config user.name "lezied"
                 git config user.email "deizel+lezied@gmail.com"
                 git add .
-                git commit -m 'Updates'
+                git commit -m 'Updates' || true
       - put: gh-pages
         params:
           repository: gh-pages
