@@ -33,7 +33,20 @@ DataCity will need to have three components in order to make it a viable platfor
 
 - **3rd Component**: The third component will be a webservice where you can observe as much in real time as we can get 
                      metrics about the different sets of data as it feeds into our validation engine. This will serve
-                     as the interface as data is updated and notify followers of gaps in records.             
+                     as the interface as data is updated and notify followers of gaps in records.    
+                     
+
+System at it's current state:
+
+<p align="center">
+  <img width="500" height="300" src="images/network_diagram.png">
+</p>
+
+**NOTE**: Workers are scalable for pulling more datasets
+
+Validation Engine
+=================
+
 
 
 Proof of Concept: Category - Police Incident Data
