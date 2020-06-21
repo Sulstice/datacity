@@ -4,6 +4,7 @@ DataCity: A Validation Platform for Data
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 ![Repo Size](https://img.shields.io/github/repo-size/Sulstice/datacity)
 [![DOI](https://zenodo.org/badge/256060429.svg)](https://zenodo.org/badge/latestdoi/256060429)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
 Welcome to Data City! Data City is an investigation/validation platform for different datasets pertaining between different
 platforms. Our motivation serves as a possible way to validate data "as it comes in" rather than after the
