@@ -137,8 +137,11 @@ We applied our idea on police incident data for several reasons
 Since we were in the essence of time we made it think that the data started coming in on the 9th of June to 16th of June 
 to retrieve a viable dataset and why validation is necessary.
 
-
 Continuous Analytic First Cycle Data Capture for police incidents in the state of Dallas
+
+Fuzzy Matching at work:
+
+![](images/gif_fuzzy.gif)
 
 **Citizen 1**
 
