@@ -29,7 +29,7 @@ Jinja2==2.11.2
 Levenshtein-search==1.4.5
 lxml==4.5.1
 MarkupSafe==1.1.1
-numpy==1.18.5
+numpy==1.22.2
 opencv-python==4.2.0.34
 openpyxl==3.0.3
 pandas==1.0.5
@@ -50,14 +50,14 @@ simplecosine==1.2
 six==1.15.0
 sodapy==2.1.0
 sortedcontainers==2.2.2
-SQLAlchemy==0.7.10
+SQLAlchemy==1.2.18
 sqlalchemy-migrate==0.13.0
-sqlparse==0.3.1
+sqlparse==0.4.2
 tabula==1.0.5
 Tempita==0.5.2
 tqdm==4.18.0
 Unidecode==1.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 xlrd==0.7.1
 xlwt==0.7.2
 zope.index==5.0.0
