@@ -29,7 +29,7 @@ Jinja2==2.11.2
 Levenshtein-search==1.4.5
 lxml==4.5.1
 MarkupSafe==1.1.1
-numpy==1.18.5
+numpy==1.22.2
 opencv-python==4.2.0.34
 openpyxl==3.0.3
 pandas==1.0.5
@@ -40,7 +40,7 @@ pycparser==2.20
 pycryptodome==3.9.7
 pyhacrf-datamade==0.2.5
 PyLBFGS==0.2.0.13
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-dateutil==2.8.1
 pytz==2020.1
 requests==2.24.0
