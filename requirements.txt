@@ -50,7 +50,7 @@ simplecosine==1.2
 six==1.15.0
 sodapy==2.1.0
 sortedcontainers==2.2.2
-SQLAlchemy==0.7.10
+SQLAlchemy==1.2.18
 sqlalchemy-migrate==0.13.0
 sqlparse==0.3.1
 tabula==1.0.5
