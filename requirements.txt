@@ -40,7 +40,7 @@ pycparser==2.20
 pycryptodome==3.9.7
 pyhacrf-datamade==0.2.5
 PyLBFGS==0.2.0.13
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-dateutil==2.8.1
 pytz==2020.1
 requests==2.24.0
@@ -50,9 +50,9 @@ simplecosine==1.2
 six==1.15.0
 sodapy==2.1.0
 sortedcontainers==2.2.2
-SQLAlchemy==0.7.10
+SQLAlchemy==1.2.18
 sqlalchemy-migrate==0.13.0
-sqlparse==0.3.1
+sqlparse==0.4.2
 tabula==1.0.5
 Tempita==0.5.2
 tqdm==4.18.0
@@ -62,3 +62,4 @@ xlrd==0.7.1
 xlwt==0.7.2
 zope.index==5.0.0
 zope.interface==5.1.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
