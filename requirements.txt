@@ -62,3 +62,4 @@ xlrd==0.7.1
 xlwt==0.7.2
 zope.index==5.0.0
 zope.interface==5.1.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
