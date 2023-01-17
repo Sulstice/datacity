@@ -18,7 +18,7 @@ Elixir==0.7.1
 et-xmlfile==1.0.1
 fastcluster==1.1.26
 feedparser==6.0.0b3
-future==0.18.2
+future==0.18.3
 fuzzy-pandas==0.1
 haversine==2.2.0
 highered==0.2.1
