@@ -43,7 +43,7 @@ PyLBFGS==0.2.0.13
 PyPDF2==1.26.0
 python-dateutil==2.8.1
 pytz==2020.1
-requests==2.24.0
+requests==2.31.0
 rlr==2.4.5
 sgmllib3k==1.0.0
 simplecosine==1.2
