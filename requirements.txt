@@ -37,7 +37,7 @@ pbr==5.4.5
 pdfminer.six==20200517
 persistent==4.6.4
 pycparser==2.20
-pycryptodome==3.9.7
+pycryptodome==3.19.1
 pyhacrf-datamade==0.2.5
 PyLBFGS==0.2.0.13
 PyPDF2==1.26.0
