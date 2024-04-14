@@ -22,7 +22,7 @@ future==0.18.2
 fuzzy-pandas==0.1
 haversine==2.2.0
 highered==0.2.1
-idna==2.9
+idna==3.7
 jdcal==1.4.1
 jellyfish==0.7.2
 Jinja2==2.11.2
